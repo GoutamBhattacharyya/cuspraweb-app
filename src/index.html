@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Welcome to CUSPERA</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">  
+  <link rel="stylesheet" href="css/chosen.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic" rel="stylesheet"/> -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  
+</head>
+
+<body>
+  <!-- Home Banner -->
+  <section>
+    <div class="home-banner">
+        <div class="container">
+          <div class="row justify-content-center search-row">
+            <div class="col-md-12 col-lg-9 col-xl-8">
+              <h3 class="text-center pb-3 mb-0">
+                  Find best software solution to fit your business needs
+              </h3>
+              <div class="row justify-content-center custom-padding-4">
+                <div class="col-md-3">
+                  <select id="cp-industry" data-placeholder="Industry *" class="select form-control search-input" tabindex="1">
+                      <option value=""></option>
+                      <option value="47">Accounting</option>
+                      <option value="94">Airlines/Aviation</option>
+                      <option value="120">Alternative Dispute Resolution</option>
+                      <option value="125">Alternative Medicine</option>
+                      <option value="127">Animation</option>
+                      <option value="19">Apparel &amp; Fashion</option>
+                      <option value="50">Architecture &amp; Planning</option>
+                      <option value="111">Arts and Crafts</option>
+                      <option value="53">Automotive</option>
+                      <option value="52">Aviation &amp; Aerospace</option>
+                      <option value="41">Banking</option>
+                      <option value="12">Biotechnology</option>
+                      <option value="36">Broadcast Media</option>
+                      <option value="49">Building Materials</option>
+                      <option value="138">Business Supplies and Equipment</option>
+                      <option value="129">Capital Markets</option>
+                      <option value="54">Chemicals</option>
+                      <option value="90">Civic &amp; Social Organization</option>
+                      <option value="51">Civil Engineering</option>
+                      <option value="128">Commercial Real Estate</option>
+                      <option value="118">Computer &amp; Network Security</option>
+                      <option value="109">Computer Games</option>
+                      <option value="3">Computer Hardware</option>
+                      <option value="5">Computer Networking</option>
+                      <option value="4">Computer Software</option>
+                      <option value="48">Construction</option>
+                      <option value="24">Consumer Electronics</option>
+                      <option value="25">Consumer Goods</option>
+                      <option value="91">Consumer Services</option>
+                      <option value="18">Cosmetics</option>
+                      <option value="65">Dairy</option>
+                      <option value="1">Defense &amp; Space</option>
+                      <option value="99">Design</option>
+                      <option value="69">Education Management</option>
+                      <option value="132">E-Learning</option>
+                      <option value="112">Electrical/Electronic Manufacturing</option>
+                      <option value="28">Entertainment</option>
+                      <option value="86">Environmental Services</option>
+                      <option value="110">Events Services</option>
+                      <option value="76">Executive Office</option>
+                      <option value="122">Facilities Services</option>
+                      <option value="63">Farming</option>
+                      <option value="43">Financial Services</option>
+                      <option value="38">Fine Art</option>
+                      <option value="66">Fishery</option>
+                      <option value="34">Food &amp; Beverages</option>
+                      <option value="23">Food Production</option>
+                      <option value="101">Fund-Raising</option>
+                      <option value="26">Furniture</option>
+                      <option value="29">Gambling &amp; Casinos</option>
+                      <option value="145">Glass, Ceramics &amp; Concrete</option>
+                      <option value="75">Government Administration</option>
+                      <option value="148">Government Relations</option>
+                      <option value="140">Graphic Design</option>
+                      <option value="124">Health, Wellness and Fitness</option>
+                      <option value="68">Higher Education</option>
+                      <option value="14">Hospital &amp; Health Care</option>
+                      <option value="31">Hospitality</option>
+                      <option value="137">Human Resources</option>
+                      <option value="134">Import and Export</option>
+                      <option value="88">Individual &amp; Family Services</option>
+                      <option value="147">Industrial Automation</option>
+                      <option value="84">Information Services</option>
+                      <option value="96">Information Technology and Services</option>
+                      <option value="42">Insurance</option>
+                      <option value="74">International Affairs</option>
+                      <option value="141">International Trade and Development</option>
+                      <option value="6">Internet</option>
+                      <option value="45">Investment Banking</option>
+                      <option value="46">Investment Management</option>
+                      <option value="73">Judiciary</option>
+                      <option value="77">Law Enforcement</option>
+                      <option value="9">Law Practice</option>
+                      <option value="10">Legal Services</option>
+                      <option value="72">Legislative Office</option>
+                      <option value="30">Leisure, Travel &amp; Tourism</option>
+                      <option value="85">Libraries</option>
+                      <option value="116">Logistics and Supply Chain</option>
+                      <option value="143">Luxury Goods &amp; Jewelry</option>
+                      <option value="55">Machinery</option>
+                      <option value="11">Management Consulting</option>
+                      <option value="95">Maritime</option>
+                      <option value="80">Marketing and Advertising</option>
+                      <option value="97">Market Research</option>
+                      <option value="135">Mechanical or Industrial Engineering</option>
+                      <option value="126">Media Production</option>
+                      <option value="17">Medical Devices</option>
+                      <option value="13">Medical Practice</option>
+                      <option value="139">Mental Health Care</option>
+                      <option value="71">Military</option>
+                      <option value="56">Mining &amp; Metals</option>
+                      <option value="35">Motion Pictures and Film</option>
+                      <option value="37">Museums and Institutions</option>
+                      <option value="115">Music</option>
+                      <option value="114">Nanotechnology</option>
+                      <option value="81">Newspapers</option>
+                      <option value="100">Nonprofit Organization Management</option>
+                      <option value="57">Oil &amp; Energy</option>
+                      <option value="113">Online Media</option>
+                      <option value="123">Outsourcing/Offshoring</option>
+                      <option value="87">Package/Freight Delivery</option>
+                      <option value="146">Packaging and Containers</option>
+                      <option value="61">Paper &amp; Forest Products</option>
+                      <option value="39">Performing Arts</option>
+                      <option value="15">Pharmaceuticals</option>
+                      <option value="131">Philanthropy</option>
+                      <option value="136">Photography</option>
+                      <option value="117">Plastics</option>
+                      <option value="107">Political Organization</option>
+                      <option value="67">Primary/Secondary Education</option>
+                      <option value="83">Printing</option>
+                      <option value="105">Professional Training &amp; Coaching</option>
+                      <option value="102">Program Development</option>
+                      <option value="79">Public Policy</option>
+                      <option value="98">Public Relations and Communications</option>
+                      <option value="78">Public Safety</option>
+                      <option value="82">Publishing</option>
+                      <option value="62">Railroad Manufacture</option>
+                      <option value="64">Ranching</option>
+                      <option value="44">Real Estate</option>
+                      <option value="40">Recreational Facilities and Services</option>
+                      <option value="89">Religious Institutions</option>
+                      <option value="144">Renewables &amp; Environment</option>
+                      <option value="70">Research</option>
+                      <option value="32">Restaurants</option>
+                      <option value="27">Retail</option>
+                      <option value="121">Security and Investigations</option>
+                      <option value="7">Semiconductors</option>
+                      <option value="58">Shipbuilding</option>
+                      <option value="20">Sporting Goods</option>
+                      <option value="33">Sports</option>
+                      <option value="104">Staffing and Recruiting</option>
+                      <option value="22">Supermarkets</option>
+                      <option value="8">Telecommunications</option>
+                      <option value="60">Textiles</option>
+                      <option value="130">Think Tanks</option>
+                      <option value="21">Tobacco</option>
+                      <option value="108">Translation and Localization</option>
+                      <option value="92">Transportation/Trucking/Railroad</option>
+                      <option value="59">Utilities</option>
+                      <option value="106">Venture Capital &amp; Private Equity</option>
+                      <option value="16">Veterinary</option>
+                      <option value="93">Warehousing</option>
+                      <option value="133">Wholesale</option>
+                      <option value="142">Wine and Spirits</option>
+                      <option value="119">Wireless</option>
+                      <option value="103">Writing and Editing</option>                      
+                  </select>
+                  <!-- <input type="text" class="form-control search-input" placeholder="Industry *">-->
+                  <span class="cp-top-arrow"></span>
+                  <span class="cp-down-arrow"></span> 
+                </div>
+                <div class="col-md-8">
+                    <input type="text" class="form-control search-input cp-bpfield" placeholder="Choose a Business Process*">
+                    <span class="cp-search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                          <g fill="none" fill-rule="evenodd" stroke="#979797" transform="translate(2 3)">
+                              <circle cx="5.5" cy="5.5" r="5.5" fill="#FFF" stroke-width="2"/>
+                              <path stroke-linecap="square" stroke-width="3" d="M10.5 9.5l6 5"/>
+                          </g>
+                      </svg>                      
+                    </span>
+                </div>
+                <div class="col-sm-11 cp-current-search">
+                    <span class="search-heading">
+                        People currently searching software solutions for
+                    </span>
+                    <ul class="search-text">
+                      <li>
+                        <a href="#">                          
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">                            
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-8 col-sm-5 col-md-3 col-lg-3">
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo.png" alt="Cuspera Logo" class="logo-normal">
+              <img src="images/logo-sticky.png" alt="Cuspera Logo" class="logo-sticky">
+            </a>
+          </div>
+        </div>
+        <div class="col-4 col-sm-7 col-md-9 col-lg-9 text-right">
+          <div class="d-block d-sm-block d-md-none">
+            <div id="nav-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="main-nav">
+            <li>
+              <a href="#scc-product" class="js-scroll-trigger">Product</a>
+            </li>
+            <li>
+              <a href="#">For Vendors</a>
+            </li>
+            <li>
+              <a href="#sec-about" class="js-scroll-trigger">About Us</a>
+            </li>
+            <li>
+              <a href="#">Sign In / Sign Up</a>
+            </li>
+          </ul>
+        </div>        
+      </div>
+    </div>
+  </header>
+  <!-- Product Section -->
+  <section id="scc-product">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h2 class="cp-page-sub-heading pt-40 pb-40">PRODUCT</h2>
+        </div>
+      </div>
+      <div class="row row-eq-height pb-5">
+        <div class="col-md-4 text-center cp-product">
+          <div class="cp-product-image mx-auto">
+            <img src="images/step1-home-page.jpg" alt="">
+          </div>
+          <span class="cp-product-name pb-2">
+              Define Business Problem
+          </span>
+          <div class="cp-product-details text-justify more">
+              <div class="cp-product-content">
+              Every business is unique in a way. Business environment, 
+              markets, suppliers, customers and processes have to adept 
+              to market realities so as the solutions to address 
+              to these needs. No two solutions can be same 
+            </div>
+              <a href="#" class="more-anchor d-md-none d-lg-none">
+                <?xml version='1.0' encoding='utf-8'?>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                  <g>
+                    <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+                  </g>
+                </svg>
+              </a>
+          </div>
+        </div>
+        <div class="col-md-4 text-center cp-product">
+          <div class="cp-product-image mx-auto">
+              <img src="images/step2-home-page.jpg" alt="">
+          </div>
+          <span class="cp-product-name pb-2">
+              Analyze and Plan
+          </span>
+          <div class="cp-product-details text-justify more">
+              <div class="cp-product-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna 
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+              ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate velit 
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+              sint occaecat cupidatat non proident, sunt in culpa qui 
+              officia deserunt mollit anim id est laborum." Duis aute 
+              irure dolor in reprehenderit in voluptate velit esse 
+              cillum dolore eu fugiat nulla pariatur. Duis aute irure 
+              dolor in reprehenderit in voluptate velit esse cillum 
+              dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+              cupidatat non proident, sunt in culpa qui officia deserunt 
+              mollit anim id est laborum."
+            </div>
+              <a href="#" class="more-anchor d-md-none d-lg-none">
+                <?xml version='1.0' encoding='utf-8'?>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                  <g>
+                    <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+                  </g>
+                </svg>
+              </a>
+          </div>
+        </div>
+        <div class="col-md-4 text-center cp-product border-0">
+          <div class="cp-product-image mx-auto">
+              <img src="images/step3-home-page.jpg" alt="">
+          </div>
+          <span class="cp-product-name pb-2">
+              Collaborate and Optimize
+          </span>
+          <div class="cp-product-details text-justify more">
+            <div class="cp-product-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna 
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+              ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate velit 
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+              sint occaecat cupidatat non proident, sunt in culpa qui 
+              officia deserunt mollit anim id est laborum." Duis aute 
+              irure dolor in reprehenderit in voluptate velit esse 
+              cillum dolore eu fugiat nulla pariatur. Duis aute irure 
+              dolor in reprehenderit in voluptate velit esse cillum 
+              dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+              cupidatat non proident, sunt in culpa qui officia deserunt 
+              mollit anim id est laborum."
+            </div>
+              <a href="#" class="more-anchor d-md-none d-lg-none">
+                <?xml version='1.0' encoding='utf-8'?>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                  <g>
+                    <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+                  </g>
+                </svg>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="sec-about" class="cp-white-bg pb-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2 class="cp-page-sub-heading pt-40 pb-40">ABOUT US</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                sint occaecat cupidatat non proident, sunt in culpa qui 
+                officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                sint occaecat cupidatat non proident, sunt in culpa qui 
+                officia deserunt mollit anim id est laborum."
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Contact Section -->
+  <section>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2 class="cp-page-sub-heading pt-40 pb-40">CONTACT</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center justify-content-md-center pb-80 pb-sm-0">
+          <div class="col-md-5 cp-fromr-boder pr-30">
+              <form id="cp-home-contact-form">
+                <div class="form-group row">
+                  <div class="col-6 col-md-6 pr-2">
+                    <input type="text" class="form-control" placeholder="First name" required>
+                  </div>
+                  <div class="col-6 col-md-6 pl-2">
+                    <input type="text" class="form-control" placeholder="Last name" required>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col">
+                      <input type="email" class="form-control" required placeholder="Business Email">
+                  </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col">
+                      <textarea class="form-control" id="" rows="3" placeholder="Comments"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-12 col-lg-12 col-xl-6 text-sm-center text-center text-md-left text-lg-left">
+                      <div class="g-recaptcha" data-sitekey="6LcpNVcUAAAAAEbHTESOoIvtx6iJVXBCGALgNw4i"></div>
+                    </div>
+                    <div class="col-md-12 col-lg-12 col-xl-6 text-sm-center text-center text-md-left text-lg-left text-xl-right">
+                        <button type="submit" class="btn btn-primary cp-submit-btn">Submit</button>
+                    </div>
+                </div>
+              </form>
+          </div>
+          <div class="col-md-5 col-sm-10 col-10 pl-30 pl-sm-15">
+            <div class="cp-office-address">
+              <span class="cp-office-loc">
+                USA
+              </span>
+              <p>
+                  456 - Suite 3,  Atlanta - GA<br>
+                  +1 123 1234567 (US)
+              </p>
+            </div>
+            <div class="cp-office-address">
+              <span class="cp-office-loc">
+                India
+              </span>
+              <p>
+                  112, 4th Cross, Kasturi Nagar,  Bangalore - KA<br>
+                  +91 1234567890
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <footer>
+    <div class="container-fluid p-0">
+      <div class="row justify-content-md-center no-gutters">
+        <div class="col-md-11">
+          <div class="row justify-content-md-between no-gutters">
+            <div class="col-md-8 col-xl-6">
+              <ul class="cp-footer-main-menu">
+                <li>
+                  <a href="#">Product</a>
+                </li>
+                <li>
+                  <a href="#">For Vendors</a>
+                </li>
+                <li>
+                  <a href="#">Expert Community</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+              <ul class="cp-footer-sub-menu">
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Terms of Service</a>
+                </li>
+              </ul>
+              <div class="row no-gutters">
+                <div class="col">
+                  <span class="cp-copyright">
+                      Copyright 2018-2019  Cuspera Technologies Pvt. Ltd.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xl-4 text-right">
+              <div class="cp-ft-social">
+                <span class="d-sm-none d-none d-md-inline-block d-lg-inline-block pr-3">Connect</span>
+                <a href="#">
+                  <img src="images/icon-fb.png" alt="Facebook">
+                </a>
+                <a href="#">
+                  <img src="images/icon-in.png" alt="Linkedin">
+                </a>
+                <a href="#">
+                  <img src="images/icon-twitter.png" alt="Twitter">
+                </a>
+                <a href="#">
+                  <img src="images/icon-mail.png" alt="Email">
+                </a>
+              </div>
+            </div>
+          </div>              
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/chosen.jquery.js" type="text/javascript"></script>
+  <script src="js/custom.js" type="text/javascript"></script>
+</body>
+
+</html>
