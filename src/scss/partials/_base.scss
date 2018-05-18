@@ -12,6 +12,9 @@ body{
     background-color: $bg-color;
     font-size: 14px;
 }
+.innerbody{
+    background-color: $inner-pagebg;
+}
 a, button, submit{
     transition: all 0.5s ease;
 }
@@ -66,4 +69,126 @@ a, button, submit{
 }
 .pr-30 {
     padding-right: 30px !important;
+}
+.mt-0-landscape {
+    @media (max-width: 991.98px) and (orientation: landscape){
+        margin-top: 0px !important;
+    }
+}
+.cp-theme-white-btn {
+    width: 145px;
+    text-align: center;
+    background: #fff;
+    height: 36px;
+    display: block;
+    line-height: 36px;
+    font-size: 13px;
+    font-weight: bold;
+    color: $sr-input-color;
+    @include border-radius(6px);
+    &:hover{
+        text-decoration: none;
+    }
+}
+.cp-transparent-input{
+    background: transparent;
+    width: 90%;
+    border: none;
+    outline: none;
+    margin-bottom: 5px !important;
+}
+.shadow-btn{
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid $sr-input-border;
+}
+.dassed-border{
+    border-bottom: 1px dashed #fff;
+}
+.cp-alert{
+    background: $ivory;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    .cp-alert-text{
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 0px;
+        @media (max-width: 991.98px) and (orientation: landscape) {
+            padding-top: 8px;
+        }
+        @media (min-width: 992px) {
+            padding-top: 8px;
+        }
+        font-size: 12px;
+        color: $theme-text-dark-color;
+        width: calc(100% - 40px);
+    }
+    svg{
+        display: inline;
+        margin-right: 3px;
+    }
+}
+.cp-theme-submit-btn{
+    @include border-radius(6px);
+    background: $submit-btn-bg;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0.4rem 1.3rem;
+    box-shadow: 0 1px 3px 0 #4a4a4a;
+}
+.cp-theme-reset-btn{
+    @include border-radius(6px);
+    background: #fff;
+    color: $reset-border;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0.4rem 1.9rem;
+    border: 1px solid $reset-border;
+}
+.cp-cs-input-text{
+    @include border-radius(2px);
+    text-align: left;
+    font-size: 14px;
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 100%;
+    background: #fafafa;
+    color: #757575;
+    height: 31px;
+    border: none;
+    outline: none;
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: black;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+        color: black;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+        color: black;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+        color: black;
+    }
+}
+.help{
+    width:11px;
+    height: 11px;
+    background: url(../images/info.png) top left no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.modal-backdrop{
+    background-color: #fff;
+}
+
+.cp-round{
+    display: block;
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+    background: $white-three;
+    @include border-radius(20px);
+    text-align: center;
+    color: $footerlink-sm-bg-color;
 }

@@ -1,0 +1,53 @@
+.cp-tooltip {
+    background :$sr-input-color;
+    position: absolute; 
+    color: white;
+    text-align: left;
+    padding: 5px 7px;   
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 100;
+    z-index: 200;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    p{
+        padding: 0px;
+        margin: 0px;
+    }
+}
+.cp-tooltip-medium{
+    width: 260px;
+}
+.topcenter-arrow{
+    &:before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 9px 18px 9px;
+        border-color: transparent transparent #4a4a4a transparent;
+        left: 50%;
+        top: -17px;
+        transform: translateX(-50%);
+    }
+}
+.topright-arrow{
+    &:before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 9px 18px 9px;
+        border-color: transparent transparent #4a4a4a transparent;
+        left: 85%;
+        top: -17px;
+    }
+}
+.border-radious10{
+    @include border-radius(10px);
+}
+.cp-tootip-pos-center{
+    right: 15%;
+    top: 200%;
+}

@@ -87,9 +87,36 @@ $(document).ready(function () {
             "Customer Service (67)",
             "Customer Success (35)"
         ];
+        var existingSolution = [
+            "Customer Advocacy (15)",
+            "Customer Experience (17)",
+            "Customer Engagement (9)",
+            "Customer Interaction (11)",
+            "Customer Satisfaction (21)",
+            "Customer Service (67)",
+            "Customer Success (35)",
+            "Customer Advocacy (15)",
+            "Customer Experience (17)",
+            "Customer Engagement (9)",
+            "Customer Interaction (11)",
+            "Customer Satisfaction (21)",
+            "Customer Service (67)",
+            "Customer Success (35)",
+            "Customer Advocacy (15)",
+            "Customer Experience (17)",
+            "Customer Engagement (9)",
+            "Customer Interaction (11)",
+            "Customer Satisfaction (21)",
+            "Customer Service (67)",
+            "Customer Success (35)"
+        ];
         $(".cp-bpfield").autocomplete({
             source: availableTags
         });
+        $(".cp-existing-solution").autocomplete({
+            source: existingSolution
+        });
+        
     });
 
     // Function for search industry
@@ -101,7 +128,7 @@ $(document).ready(function () {
 
 
     // Click function for mobile menu
-    $('#nav-icon').click(function () {
+    $('.cp-home-icon').click(function () {
         $(this).toggleClass('open');
         // $('body').toggleClass('move-body-right');
         // $(".main-nav").toggleClass('move-right-zero');
@@ -139,6 +166,53 @@ $(document).ready(function () {
         }
     });
 
+    // Inside page mobile menu
+
+    $('.cp-white-icon').click(function () {
+        $(this).toggleClass('open');
+        if ($("body").hasClass("moved-right")) {
+            $(".inner-mobile-header").animate({
+                "right": "-254px"
+            });
+            $("body").animate({
+                "right": "0px"
+            }, function () {
+                $('body').css({
+                    "position": "inherit",
+                    "overflow": "visible"
+                }).removeClass("moved-right");
+            });
+        } else {
+            $('body').css({
+                    "position": "absolute",
+                    "overflow": "hidden",
+                    "width": "100%"
+                })
+                .animate({
+                    "right": "254px"
+                })
+                .addClass("moved-right");
+            $(".inner-mobile-header").animate({
+                "right": "0px"
+            });
+        }
+    });
+
+    //
+
+    $(".cp-software-recommendations").click(function(){
+        $(".cp-right-form-content").removeClass("d-none");
+        $(".cp-right-form-content").animate({
+            "left": "0px"
+        });
+    });
+    $(".cp-backhome-arrow").click(function(){        
+        $(".cp-right-form-content").animate({
+            "left": $(window).width() + 254
+        },function(){
+            $(".cp-right-form-content").addClass("d-none");   
+        });
+    });
     //initialize first two search array valy after document load
 
     $(".search-text li").first().find("a").text(searchItems[0] + ", ");
@@ -155,7 +229,7 @@ $(document).ready(function () {
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     if ($(window).width() < 768) {
-                        $("header").stop().delay(300).animate({
+                        $(".home-header").stop().delay(300).animate({
                             "left": "-254px"
                         });
                     }
@@ -208,6 +282,23 @@ $(window).resize(function () {
     } else {
         $(".more").css("height", "auto").removeClass("less");
     }
+    if(winWidth>=992){
+        $(".cp-right-form-content").css({
+            "position": "relative",
+            "height": "auto",
+            "overflow": "auto",
+            "left": "auto",
+            "top": "auto"
+        });
+    }else{
+        $(".cp-right-form-content").css({
+            "position": "fixed",
+            "height": "100vh",
+            "overflow-y": "scroll",
+            "left": $(window).width()+254,
+            "top": "0px"
+        });
+    }
 });
 
 
@@ -231,9 +322,9 @@ $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 80) {
-        $("header").addClass("sticky-header");
+        $(".home-header").addClass("sticky-header");
     } else {
-        $("header").removeClass("sticky-header");
+        $(".home-header").removeClass("sticky-header");
     }
 });
 
@@ -242,3 +333,18 @@ window.setInterval(function () {
     /// call your function here
     updateCurrentSearch();
 }, 3000);
+
+
+//Bookmark
+
+$('.cp-bookmark').click(function() {
+    $(this).toggleClass("fa-star");
+    $(this).toggleClass("fa-star-o");
+});
+
+
+//Modal load on page load
+
+$(window).on('load',function(){
+    $('#signupmodal').modal('show');
+});
