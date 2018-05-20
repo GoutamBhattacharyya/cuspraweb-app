@@ -286,7 +286,7 @@ $(window).resize(function () {
         $(".cp-right-form-content").css({
             "position": "relative",
             "height": "auto",
-            "overflow": "auto",
+            "overflow": "visible",
             "left": "auto",
             "top": "auto"
         });

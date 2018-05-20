@@ -101,6 +101,10 @@ a, button, submit{
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     border: 1px solid $sr-input-border;
 }
+.inactive-button{
+    pointer-events: none;
+    opacity: .5;
+}
 .dassed-border{
     border-bottom: 1px dashed #fff;
 }
@@ -135,6 +139,9 @@ a, button, submit{
     font-weight: bold;
     padding: 0.4rem 1.3rem;
     box-shadow: 0 1px 3px 0 #4a4a4a;
+    @media (max-width: 991.98px){
+        padding: 0.4rem 1rem;
+    }
 }
 .cp-theme-reset-btn{
     @include border-radius(6px);
