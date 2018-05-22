@@ -273,7 +273,7 @@ $(document).ready(function () {
     })(jQuery); // End of use strict
 
 });
-$(window).resize(function () {
+/*$(window).resize(function () {
     //productMore function will work on only from 756 px screen resolution.
     winWidth = $(window).width();
     $(".more").removeClass("less");
@@ -299,7 +299,7 @@ $(window).resize(function () {
             "top": "0px"
         });
     }
-});
+});*/
 
 
 $(".more-anchor").click(function (e) {
@@ -348,3 +348,9 @@ $('.cp-bookmark').click(function() {
 $(window).on('load',function(){
     $('#signupmodal').modal('show');
 });
+
+
+$('.view-evidences').click(function(e) {
+    e.preventDefault();
+    alert("hi");
+})

@@ -128,7 +128,25 @@ a, button, submit{
     }
     svg{
         display: inline;
+        margin-right: 3px;        
+    }
+}
+.my-software-rank{
+    background: $ivory;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    svg{
+        display: inline;
         margin-right: 3px;
+        fill: #ffa000;
+    }
+    .my-software-rank-text{
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 0px; 
+        font-weight: 500;
+        color: $theme-text-dark-color;
+        font-size: 11px;
     }
 }
 .cp-theme-submit-btn{
@@ -150,7 +168,11 @@ a, button, submit{
     font-size: 14px;
     font-weight: bold;
     padding: 0.4rem 1.9rem;
-    border: 1px solid $reset-border;
+    border: 1px solid $reset-border;    
+    &.dark-color{
+        color: $theme-text-dark-color;
+        box-shadow: 0 1px 1px 0 #4a4a4a;
+    }
 }
 .cp-cs-input-text{
     @include border-radius(2px);
@@ -198,4 +220,58 @@ a, button, submit{
     @include border-radius(20px);
     text-align: center;
     color: $footerlink-sm-bg-color;
+}
+.select-type-small{
+    width: 113px !important;
+    height: 21px !important;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0px;
+}
+.select-lable-small{
+    font-size: 12px;
+    margin-right: 3px;
+}
+.opacity-50{
+    opacity: .5;
+}
+.cp-big-dn-arrow{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 7.5px 0 7.5px;
+    border-color: $sr-input-color transparent transparent transparent;
+}
+.sc-blod-font {
+    font-weight: bold;
+}
+.cp-dotted-border-top{
+    border-top: 1px dotted #d4d4d4;
+}
+.cp-add-missing-process-btn{
+    background: #fff;
+    border: 1px solid #d4d4d4;
+    @include border-radius(2px);
+    padding: 3px 80px 3px 5px;
+    font-size: 12px;
+    color: #9b9b9b;
+    position: relative;
+    &:before{
+        content:"";
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        right: 5px;
+        top: 5px;
+        background: url(../images/add-process-plus.jpg) top right no-repeat;
+    }
+    &:after{
+        content:"";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        right: 23px;
+        top: 0px;
+        background: #d4d4d4;
+    }
 }

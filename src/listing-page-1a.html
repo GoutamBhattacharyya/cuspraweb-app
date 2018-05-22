@@ -219,7 +219,7 @@
               <!-- left part form content -->
               <div class="col-lg-7 cp-left-form-content">
                 <span class="cp-step">STEP 1 : Personalize results by providing business context</span>
-                <h2 class="ininstruction-text">Write some instruction text here </h2>
+                <h2 class="instruction-text">Write some instruction text here </h2>
                 <div class="cp-form-layout">
                   <form>
                     <div class="form-group">
@@ -370,97 +370,185 @@
                 </ul>
                 <!-- Software list component for Business Context -->
                 <div class="cp-software-found">
-                  <h3>150 Software found for 1 selected process</h3>
+                  <h3>150 Software found for 1 selected process</h3>                  
                   <div class="container">
                     <div class="row justify-content-between cp-list heading">
-                      <div class="col-3">Software</div>
-                      <div class="col-4 text-right cp-satisfaction-lavel">
-                        <a href="#">
+                      <div class="col-6 col-lg-7">Software</div>                       
+                      <div class="col-4 col-lg-3 text-right cp-satisfaction-lavel">
+                        <a href="#" class="selected">
                           <span class="long-arrow-alt-down"></span>
                           Satisfaction     
-                          <span class="help"></span>
-                        </a>
-                        <div class="cp-tooltip cp-tooltip-medium topright-arrow border-radious10 cp-tootip-pos-center">
+                          <span class="help d-none d-xl-inline-block"></span>
+                        </a>   
+                        <div class="cp-tooltip cp-tooltip-medium topright-arrow border-radious10 cp-tootip-pos-center d-none d-lg-inline-block d-xl-inline-block">
                           <p>
                               Percentage of evidences with positive sentiments about this software collected from multiple resources
                           </p>
-                        </div>                        
+                        </div>                     
                       </div>
                     </div>
                   </div>
                   <div class="cp-software-list">
-                    <ul>
-                      <li>
-                        <a href="#" class="d-flex align-items-center">
-                          <span class="software-image"><img src="images/sales-force-ervice-cloud.jpg"></span>
-                          <span class="software-name">SalesForce Service Cloud</span>
-                          <span class="software-like"><img src="images/like.jpg"></span>
-                          <span class="software-like-figure">5.0</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="d-flex align-items-center">
-                          <span class="software-image"><img src="images/zendesk-support.jpg"></span>
-                          <span class="software-name">ZenDesk Support</span>
-                          <span class="software-like"><img src="images/like.jpg"></span>
-                          <span class="software-like-figure">5.0</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="d-flex align-items-center">
-                          <span class="software-image"><img src="images/zoho-desk.jpg"></span>
-                          <span class="software-name">Zoho Desk</span>
-                          <span class="software-like"><img src="images/like.jpg"></span>
-                          <span class="software-like-figure">4.5</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="d-flex align-items-center">
-                          <span class="software-image"><img src="images/liveagent.jpg"></span>
-                          <span class="software-name">Live Agent</span>
-                          <span class="software-like"><img src="images/like.jpg"></span>
-                          <span class="software-like-figure">4.5</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="d-flex align-items-center">
-                          <span class="software-image"><img src="images/jiraservicedesk.jpg"></span>
-                          <span class="software-name">Jira Service Desk</span>
-                          <span class="software-like"><img src="images/like.jpg"></span>
-                          <span class="software-like-figure">4.0</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="d-flex align-items-center">
-                          <span class="software-image"><img src="images/Intercom.jpg"></span>
-                          <span class="software-name">Intercom</span>
-                          <span class="software-like"><img src="images/like.jpg"></span>
-                          <span class="software-like-figure">3.5</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="d-flex align-items-center">
-                          <span class="software-image"><img src="images/oracle-service-cloud.jpg"></span>
-                          <span class="software-name">Oracle Service Cloud</span>
-                          <span class="software-like"><img src="images/like.jpg"></span>
-                          <span class="software-like-figure">3.5</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="d-flex align-items-center">
-                          <span class="software-image"><img src="images/team-support.jpg"></span>
-                          <span class="software-name">TeamSupport</span>
-                          <span class="software-like"><img src="images/like.jpg"></span>
-                          <span class="software-like-figure">3.0</span>
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="d-flex justify-content-center pt-20 pb-40">
-                      <!-- Click here and generate more li in cp-software-list-->
-                      <!-- delete inactive-button and button become active -->
-                      <a href="#" class="cp-theme-white-btn shadow-btn inactive-button">Load More...</a>
-                    </div>                    
-                  </div>
+                      <ul>
+                        <li>
+                            <div class="row-top">
+                              <a href="#" class="link-full-row"></a>                        
+                              <div class="row align-items-center justify-content-between">
+                                <div class="col-6 col-lg-7 pr-lg-0 d-flex align-items-center">
+                                  <span class="software-image">
+                                    <img src="images/sales-force-ervice-cloud.jpg">
+                                  </span>
+                                  <span class="software-name">SalesForce Service Cloud</span>
+                                </div>
+                                <div class="col-3 col-lg-2 pr-lg-0 text-right text-lg-left text-xl-left">
+                                  <a href="#" class="software-like">
+                                    <img src="images/like.jpg">
+                                  </a>
+                                  <span class="software-like-figure">5.0</span>
+                                </div>
+                              </div> 
+                            </div>
+                        </li>
+                        <li>
+                          <div class="row-top">
+                            <a href="#" class="link-full-row"></a>
+                            <div class="row align-items-center justify-content-between">
+                              <div class="col-6 col-lg-7 pr-lg-0 d-flex align-items-center">
+                                <span class="software-image">
+                                  <img src="images/zendesk-support.jpg">
+                                </span>
+                                <span class="software-name">ZenDesk Support</span>
+                              </div>
+                              <div class="col-3 col-lg-2 pr-lg-0 text-right text-lg-left text-xl-left">
+                                <span class="software-like">
+                                  <img src="images/like.jpg">
+                                </span>
+                                <span class="software-like-figure">5.0</span>
+                              </div>
+                            </div> 
+                          </div>                      
+                        </li>  
+                        <li>
+                          <div class="row-top">
+                            <a href="#" class="link-full-row"></a>
+                            <div class="row align-items-center justify-content-between">
+                              <div class="col-6 col-lg-7 pr-lg-0 d-flex align-items-center">
+                                <span class="software-image">
+                                  <img src="images/zoho-desk.jpg">
+                                </span>
+                                <span class="software-name">Zoho Desk</span>
+                              </div>
+                              <div class="col-3 col-lg-2 pr-lg-0 text-right text-lg-left text-xl-left">
+                                <span class="software-like">
+                                  <img src="images/like.jpg">
+                                </span>
+                                <span class="software-like-figure">4.5</span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>  
+                        <li>
+                          <div class="row-top">
+                            <a href="#" class="link-full-row"></a>
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-6 col-lg-7 pr-lg-0 d-flex align-items-center">
+                                  <span class="software-image">
+                                    <img src="images/liveagent.jpg">
+                                  </span>
+                                  <span class="software-name">Live Agent</span>
+                                </div>                                
+                                <div class="col-3 col-lg-2 pr-lg-0 text-right text-lg-left text-xl-left">
+                                  <span class="software-like">
+                                    <img src="images/like.jpg">
+                                  </span>
+                                  <span class="software-like-figure">4.5</span>
+                                </div>
+                              </div>
+                            </div>
+                        </li>
+                        <li>
+                          <div class="row-top">
+                            <a href="#" class="link-full-row"></a>
+                            <div class="row align-items-center justify-content-between">
+                              <div class="col-6 col-lg-7 pr-lg-0 d-flex align-items-center">
+                                <span class="software-image">
+                                  <img src="images/jiraservicedesk.jpg">
+                                </span>
+                                <span class="software-name">Jira Service Desk</span>
+                              </div>                              
+                              <div class="col-3 col-lg-2 pr-lg-0 text-right text-lg-left text-xl-left">
+                                <span class="software-like">
+                                  <img src="images/like.jpg">
+                                </span>
+                                <span class="software-like-figure">4.0</span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="row-top">
+                            <a href="#" class="link-full-row"></a>
+                            <div class="row align-items-center justify-content-between">
+                              <div class="col-6 col-lg-7 pr-lg-0 d-flex align-items-center">
+                                <span class="software-image">
+                                  <img src="images/Intercom.jpg">
+                                </span>
+                                <span class="software-name">Jira Service Desk</span>
+                              </div>                              
+                              <div class="col-3 col-lg-2 pr-lg-0 text-right text-lg-left text-xl-left">
+                                <span class="software-like">
+                                  <img src="images/like.jpg">
+                                </span>
+                                <span class="software-like-figure">3.5</span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="row-top">
+                            <a href="#" class="link-full-row"></a>
+                            <div class="row align-items-center justify-content-between">
+                              <div class="col-6 col-lg-7 pr-lg-0 d-flex align-items-center">
+                                <span class="software-image">
+                                  <img src="images/oracle-service-cloud.jpg">
+                                </span>
+                                <span class="software-name">Oracle Service Cloud</span>
+                              </div>
+                              <div class="col-3 col-lg-2 pr-lg-0 text-right text-lg-left text-xl-left">
+                                <span class="software-like">
+                                  <img src="images/like.jpg">
+                                </span>
+                                <span class="software-like-figure">3.5</span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="row-top">
+                            <a href="#" class="link-full-row"></a>
+                            <div class="row align-items-center justify-content-between">
+                              <div class="col-6 col-lg-7 pr-lg-0 d-flex align-items-center">
+                                <span class="software-image">
+                                  <img src="images/team-support.jpg">
+                                </span>
+                                <span class="software-name">TeamSupport</span>
+                              </div>                              
+                              <div class="col-3 col-lg-2 pr-lg-0 text-right text-lg-left text-xl-left">
+                                <span class="software-like">
+                                  <img src="images/like.jpg">
+                                </span>
+                                <span class="software-like-figure">3.0</span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="d-flex justify-content-center pt-20 pb-40">
+                        <!-- Click here and generate more li in cp-software-list-->
+                        <!-- delete inactive-button and button become active -->
+                        <a href="#" class="cp-theme-white-btn shadow-btn inactive-button">Load More...</a>
+                      </div>                    
+                    </div>
                 </div>
                 <!-- Software list component for Business Context -->
               </div>
