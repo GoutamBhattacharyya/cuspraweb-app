@@ -1,83 +1,117 @@
 .cp-processes-listing{
     .cp-process-row{
         border-bottom: solid 1px #d4d4d4;
+        select.form-control:not([size]):not([multiple]) {
+            height: calc(1.6rem + 2px);
+            padding: 0rem 1rem;
+        }
     }
     .cp-process-row:nth-child(odd){
         background: #fff;
+    }
+    .cp-process-row-expand-view{
+        font-size: 12px;
     }
     .processes-heading{
         font-size: 14px;
         line-height: 20px;
         color: $theme-text-dark-color;
-        font-weight: 500;        
+        font-weight: 500;      
+        @media (max-width: 991.98px) {
+            padding-right: 15px;
+        }
     }
     .cp-big-dn-arrow{
         display: inline-block;
         position: relative;
         top: 3px;
         margin-right: 6px;
+        @media (max-width: 991.98px) {
+            margin-left: 15px;            
+        }
     }
     .cp-process-holder{
         max-height: 430px;
         overflow-y: auto;
         overflow-x: hidden;
         border-bottom: 1px solid #c7c7c7;
+        @media (max-width: 991.98px) {
+            padding-left: 0px !important;
+            padding-right: 0px !important;            
+        }
     }
     .cp-process-name{
-        font-size: 12px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
+        font-size: 12px;       
         max-width: 70%;
+        @media (max-width: 991.98px) {
+            max-width: none;
+            margin-right: 0px !important;  
+            font-size: 11px;     
+        }
     }
-    .cp-green-round{
-        top: 2px;
-    }
+    .cp-affinity-value{
+        font-size: 12px;
+    }    
     .cp-cta-tooltip{
         position: relative;
-        top:-2px;
+        top:4px;
+        @media (max-width: 991.98px) {
+            display: none;
+        }
     }
+    .cp-add-missing-process-text{
+        @media (max-width: 991.98px) {
+            margin-left: 15px;
+            width: 170px;
+        }
+    }
+    .cp-add-missing-process-btn{
+        @media (max-width: 991.98px) {
+            margin-left: -10px;
+        }
+    }
+    .radio{
+        lable{
+            font-size: 1.2em;
+        }
+    }    
 }
 
 .cp-green-round{
-    width: 14px;
-    height: 14px;
     min-width: 14px;
-    @include border-radius(14px);
-    background: #00796b;
-    border: #009688;
     display: block;
     position: relative;
     &.closed{
         &:before{
-            content:"+";
+            content:"";
             position: absolute;
-            color: #fff;
+            width: 14px;
+            height: 14px;        
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 0px;
+            background: url(../images/grid-expand.png) top left no-repeat;
         }
     }
     &.open{
         &:before{
             content:"-";
             position: absolute;
-            color: #fff;
-            top: 40%;
+            width: 14px;
+            height: 14px;        
+            top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
-            font-weight: 500;
-            font-size: 25px;
-            line-height: 0px;
+            background: url(../images/grid-collapse.png) top left no-repeat;
         }
     }
 }
 .cp-priority-selected{
     .cp-process-name{
         font-weight: bold;
+        @media (max-width: 991.98px) {
+            font-weight: 500;
+        }
     }
     .cp-priority-select{
         select{
@@ -205,8 +239,15 @@
 .cta-link-arrow{
     position: absolute;
     top: 3px;
-    right: 12%;
+    right: -6px;
     svg{
-        opacity: .4;
+        opacity: .6;
     }
+}
+.cp-process-holder .mCSB_scrollTools{
+    right: -6px;
+    opacity: .5;
+}
+.cp-process-holder .mCSB_inside > .mCSB_container{
+    margin-right: 2px;
 }

@@ -350,7 +350,7 @@ $(window).on('load',function(){
 });
 
 
-$('.view-evidences').click(function(e) {
-    e.preventDefault();
-    alert("hi");
-})
+// $('.view-evidences').click(function(e) {
+//     e.preventDefault();
+//     alert("hi");
+// });

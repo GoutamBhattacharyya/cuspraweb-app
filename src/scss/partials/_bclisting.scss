@@ -61,6 +61,12 @@
         width: calc(100% - 75px);
     }
 }
+.cp-right-pannel > .container{
+    @media (max-width: 991.98px) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
 .cp-app-menu {
     ul,li{
         list-style: none;
@@ -268,18 +274,28 @@
         margin: 0px;
         font-weight: bold;
         display: block;
+        @media (max-width: 991.98px) {
+            padding: 15px 15px 7px;
+        }
     }
     h2.ininstruction-text {
         font-size: 13px;
         padding: 0px;
         margin: 0px 0 25px 0;
         font-weight: normal;
+        @media (max-width: 991.98px) {
+            padding: 15px 15px 7px;
+        }
     }
     h2.instruction-text {
-        font-size: 13px;
+        font-size: 12px;
         padding: 0px;
         margin: 0px 0 25px 0;
-        font-weight: normal;
+        font-weight: 300;
+        line-height: 18px;
+        @media (max-width: 991.98px) {
+            padding: 15px 15px 7px;
+        }
     }
 }
 .cp-right-form-content{
@@ -384,6 +400,7 @@
         padding: 7px 15px 15px;
         margin: 0px;
         font-weight: 400;
+        color: $sr-input-color;
     }
 }
 .heading {
@@ -405,7 +422,7 @@
             &:after{
                 content: "";
                 left: 0px;
-                bottom: -4px;
+                bottom: -5px;
                 width: 100%;
                 height: 3px;
                 position: absolute;
@@ -538,10 +555,13 @@
                     top: 2px;
                 }
             }
+            .row-mid{
+                margin-top: 6px;
+            }
             .view-evidences{
                 position: absolute;
-                left: 80px;
-                bottom: -20px;
+                // left: 80px;
+                bottom: -15px;
                 font-size: 11px;
                 color: $dark-sky-blue;
                 text-decoration: underline;
@@ -551,6 +571,12 @@
                 z-index: 6;
                 &.open{
                     background: url(../images/icon-minus.jpg) 0px 2px no-repeat;
+                }
+                &.move-left-zero{
+                    left: 0px;
+                }
+                &.move-right-zero{
+                    right: 0px;
                 }
             }
             .cp-con-view-evidences{
@@ -647,6 +673,36 @@
                     text-decoration: underline;
                 }
             }
+            .cp-con-view-pricing-plan{
+                box-shadow: inset 0 2px 1px 0 rgba(0, 0, 0, 0.5);
+                position: relative;
+                margin: 0px 3px;
+                border: solid 1px #d4d4d4;
+                margin-bottom: 10px;    
+                min-height:200px;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    width: 102%;
+                    border-bottom: solid 1px #bdbdbd;
+                    left: -4px;
+                    bottom: -10px;
+                }
+                .pricing-list{                    
+                    margin: 20px 0px;
+                    font-size: 11px;
+                    line-height: 21px;
+                    color: $sr-input-color;
+                    border-bottom: 1px dashed #d4d4d4;
+                }
+                .cp-payment-ins{
+                    margin-bottom: 20px;
+                    display: block;
+                }
+                .cp-price-row{
+                    border-top: 1px dashed #d4d4d4;
+                }
+            }
             .link-full-row{
                 position: absolute;
                 width:100%;
@@ -655,6 +711,26 @@
                 top: 0px;
                 left: 0px;
             }
+        }
+    }
+    .cp-mb-price{
+        font-size: 12px;
+        font-weight: bold;
+        color: #212121;
+    }
+    .cp-mb-month{
+        font-size: 10px;
+        color: #757575;
+        @media (min-width: 320px) and (max-width: 360px) {
+            margin-left: -6px;
+        }
+    }
+    .cta-link-arrow{
+        @media (min-width: 360px) and (max-width: 650.98px) {
+            right: 3px;
+        }
+        @media (min-width: 651px) and (max-width: 991.98px) {
+            right: 15px;
         }
     }
 }
@@ -685,5 +761,16 @@
     a{
         color: $white-three;
         font-size: 11px;
+    }
+}
+.selected{
+    &:after{
+        content: "";
+        left: 0px;
+        bottom: -2px;
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        background: #3f51b5;
     }
 }

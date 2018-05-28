@@ -1,4 +1,8 @@
 .cp-form-layout{
+    @media (max-width: 991.98px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }    
     label{
         font-size: 13px;
         color: $footerlink-sm-bg-color;

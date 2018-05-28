@@ -70,6 +70,16 @@ a, button, submit{
 .pr-30 {
     padding-right: 30px !important;
 }
+.pl-small-15{
+    @media (max-width: 991.98px) {
+        padding-left: 15px !important;
+    } 
+}
+.pr-small-15{
+    @media (max-width: 991.98px) {
+        padding-right: 15px !important;
+    }  
+}
 .mt-0-landscape {
     @media (max-width: 991.98px) and (orientation: landscape){
         margin-top: 0px !important;
@@ -248,14 +258,27 @@ a, button, submit{
 .cp-dotted-border-top{
     border-top: 1px dotted #d4d4d4;
 }
+.cp-add-missing-process-text{
+    width: 230px;
+    @include border-radius(2px);
+    border: solid 1px #d4d4d4;
+    outline: none;
+    height: 26px;
+    padding: 0 10px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #9b9b9b;
+}
 .cp-add-missing-process-btn{
     background: #fff;
-    border: 1px solid #d4d4d4;
+    border: solid 1px #d4d4d4;
+    border-left: none;
     @include border-radius(2px);
-    padding: 3px 80px 3px 5px;
+    padding: 3px 3px 3px 5px;
     font-size: 12px;
     color: #9b9b9b;
     position: relative;
+    width: 26px;
     &:before{
         content:"";
         position: absolute;
@@ -273,5 +296,33 @@ a, button, submit{
         right: 23px;
         top: 0px;
         background: #d4d4d4;
+    }
+}
+.sm-no-gutters{
+    @media (max-width: 991.98px) {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+.sm-no-gutters > .col, .sm-no-gutters > [class*="col-"]{
+    @media (max-width: 991.98px) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.cp-font-medium{
+    font-weight: 500;
+}
+.font-cap {
+    text-transform: uppercase;
+}
+
+.cp-mv-right{
+    @media (min-width: 320px) and (max-width: 360px) {
+        left: 6px;
+    }
+    @media (min-width: 361px) and (max-width: 500px) {
+        left: 8px;
     }
 }
