@@ -125,6 +125,10 @@ $(document).ready(function () {
             placeholder_text_single: "Industry *"
         });
     });
+    // Function for software dp
+    $(function () {
+        $("#cp-software-dp").chosen();
+    });
 
 
     // Click function for mobile menu

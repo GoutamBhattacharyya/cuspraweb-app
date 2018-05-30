@@ -267,17 +267,6 @@
         max-width: 55.33333%;
     }
     min-height: calc(100vh - 280px);
-    .cp-step{
-        color: $theme-text-dark-color;
-        font-size: 16px;
-        padding: 15px 0 7px;
-        margin: 0px;
-        font-weight: bold;
-        display: block;
-        @media (max-width: 991.98px) {
-            padding: 15px 15px 7px;
-        }
-    }
     h2.ininstruction-text {
         font-size: 13px;
         padding: 0px;
@@ -296,6 +285,17 @@
         @media (max-width: 991.98px) {
             padding: 15px 15px 7px;
         }
+    }
+}
+.cp-step{
+    color: $theme-text-dark-color;
+    font-size: 16px;
+    padding: 15px 0 7px;
+    margin: 0px;
+    font-weight: bold;
+    display: block;
+    @media (max-width: 991.98px) {
+        padding: 15px 15px 7px;
     }
 }
 .cp-right-form-content{
@@ -339,53 +339,51 @@
     }
     background: #fff;
 }
-.cp-right-form-content{
-    .cp-mb-back{
-        height: 60px;
-        background: $pale-gray;
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
-        .cp-mb-step-text{
-            font-size: 14px;
-            font-weight: bold;
-            margin-right: 15px;
+.cp-mb-back{
+    height: 60px;
+    background: $pale-gray;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+    .cp-mb-step-text{
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 15px;
+        display: inline-block;
+    }
+    .cp-mb-page-status{
+        display: inline;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        li{
             display: inline-block;
-        }
-        .cp-mb-page-status{
-            display: inline;
-            padding: 0px;
-            margin: 0px;
-            list-style: none;
-            li{
-                display: inline-block;
-                position: relative;
-                margin-right: 22px;
+            position: relative;
+            margin-right: 22px;
+            &:after{
+                content: "";
+                position: absolute;
+                width: 25px;
+                height: 2px;
+                background: $white-three;
+                right: -25px;
+                top: 49%;
+            }
+            &:last-child{
                 &:after{
-                    content: "";
-                    position: absolute;
-                    width: 25px;
-                    height: 2px;
-                    background: $white-three;
-                    right: -25px;
-                    top: 49%;
+                    display: none;
                 }
-                &:last-child{
-                    &:after{
-                        display: none;
-                    }
-                }
-                .cp-child-text{
-                    display: block;
-                    position: absolute;
-                    font-size: 9px;
-                    color: $footerlink-sm-bg-color;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
-                &.cp-mb-active-status{
-                    .cp-round{
-                        background: $active-circle-color;
-                        color: #fff;
-                    }
+            }
+            .cp-child-text{
+                display: block;
+                position: absolute;
+                font-size: 9px;
+                color: $footerlink-sm-bg-color;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &.cp-mb-active-status{
+                .cp-round{
+                    background: $active-circle-color;
+                    color: #fff;
                 }
             }
         }
@@ -546,13 +544,8 @@
                     margin-left: 4px;
                 }
                 .software-rating{
-                    background: $white-three;
-                    @include border-radius(3px);
                     height: 16px;
                     width: 16px;
-                    display: inline-block;
-                    position: relative;
-                    top: 2px;
                 }
             }
             .row-mid{
