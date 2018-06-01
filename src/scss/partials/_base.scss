@@ -176,6 +176,18 @@ a, button, submit{
         padding: 0.4rem 1rem;
     }
 }
+.cp-theme-a-btn{
+    @include border-radius(6px);
+    background: $submit-btn-bg;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0.4rem 2.2rem;
+    box-shadow: 0 1px 3px 0 #4a4a4a;
+    @media (max-width: 991.98px){
+        padding: 0.4rem 1rem;
+    }
+}
 .cp-theme-reset-btn{
     @include border-radius(6px);
     background: #fff;
@@ -399,4 +411,84 @@ a, button, submit{
 }
 .gray-bg{
     background-color: #fafafa !important;
+}
+.cp-letteravatar{
+    width: 35px;
+    height: 35px;
+    @include border-radius(35px !important);
+    background: #fff;
+    font-size: 24px !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #757575;
+    line-height: 35px;
+    &:hover{
+        text-decoration: none;
+        color: #757575;
+    }
+}
+.cp-user-name{
+    font-size: 13px;
+    display: block;
+    color: #fff;
+    position: relative;
+    top: 2px;
+}
+.cp-user-log-stat{
+    font-size: 11px;
+    color: #fff;
+    position: relative;
+    top: -3px;
+    font-weight: 300;
+    &:hover{
+        text-decoration: none;
+        color: #fff;
+    }
+}
+.link-full-row{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+}
+.custom-lg-3 {
+    @media (min-width: 992px) {
+        flex: 0 0 22.33333%;
+        max-width: 22.33333%;
+    }
+}
+.custom-lg-7 {
+    @media (max-width: 400px) {
+        flex: 0 0 60.33333%;
+        max-width: 60.33333%;
+    }
+    @media (min-width: 992px) {
+        flex: 0 0 54.33333%;
+        max-width: 54.33333%;
+    }
+    
+    flex: 0 0 64.33333%;
+    max-width: 64.33333%;
+}
+
+.cp-mb-new-project-btn{
+    width: 54px;
+    height: 54px;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    @include border-radius(54px);
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    font-size: 34px;
+    line-height: 54px;
+    display: none;
+    text-align: center;
+    background: $submit-btn-bg;
+    z-index: 100;
+    @media (max-width: 991.98px) {
+        display: block;
+    }
 }
