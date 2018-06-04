@@ -182,10 +182,14 @@ a, button, submit{
     color: #fff;
     font-size: 14px;
     font-weight: bold;
+    text-align: center; 
     padding: 0.4rem 2.2rem;
     box-shadow: 0 1px 3px 0 #4a4a4a;
     @media (max-width: 991.98px){
         padding: 0.4rem 1rem;
+    }
+    &:hover{
+        color: #fff;
     }
 }
 .cp-theme-reset-btn{
@@ -367,10 +371,91 @@ a, button, submit{
         max-width: 22.33333%;
     }
 }
+.custom-lg-2 {
+    flex: 0 0 42%;
+    max-width: 42%;
+    @media (min-width: 992px) {
+        flex: 0 0 19%;
+        max-width: 19%;
+    }
+}
 .custom-lg-1 {
     @media (min-width: 992px) {
         flex: 0 0 10.666%;
         max-width: 10.666%;
+    }
+}
+.custom-xs-col-10 {
+    @media (min-width:320px) and (max-width: 400px) {
+        flex: 0 0 61.33333%;
+        max-width: 61.33333%;
+    }
+    @media (min-width:401px) and (max-width: 500px) {
+        flex: 0 0 69.33333%;
+        max-width: 69.33333%;
+    } 
+    @media (min-width:501px) and (max-width: 550px) {
+        flex: 0 0 74.33333%;
+        max-width: 74.33333%;
+    }  
+    @media (min-width:551px) and (max-width: 700px) {
+        flex: 0 0 78.33333%;
+        max-width: 78.33333%;
+    }  
+    @media (min-width:700px) and (max-width: 954px) {
+        flex: 0 0 84.33333%;
+        max-width: 84.33333%;
+    }
+    @media (min-width:955px) and (max-width: 990px) {
+        flex: 0 0 89.33333%;
+        max-width: 89.33333%;
+    }       
+}
+.custom-xs-col-2{
+    @media (min-width:320px) and (max-width: 400px) {
+        flex: 0 0 38.66667%;
+        max-width: 38.66667%;
+    }
+    @media (min-width:401px) and (max-width: 500px) {
+        flex: 0 0 30.66667%;
+        max-width: 30.66667%;
+    }
+    @media (min-width:501px) and (max-width: 550px) {
+        flex: 0 0 25.66667%;
+        max-width: 25.66667%;
+    }
+    @media (min-width:551px) and (max-width: 700px) {
+        flex: 0 0 21.66667%;
+        max-width: 21.66667%;
+    }
+    @media (min-width:700px) and (max-width: 954px) {
+        flex: 0 0 15.66667%;
+        max-width: 15.66667%;
+    }
+    @media (min-width:955px) and (max-width: 990px) {
+        flex: 0 0 10.66667%;
+        max-width: 10.66667%;
+    }
+        
+}
+.custom-md-col-2 {
+    @media (min-width:700px) and (max-width: 954px) {
+        flex: 0 0 10.66667%;
+        max-width: 10.66667%;
+    }
+    @media (min-width:955px) and (max-width: 990px) {
+        flex: 0 0 5.66667%;
+        max-width: 5.66667%;
+    }
+}
+.custom-md-col-10 {
+    @media (min-width:700px) and (max-width: 954px) {
+        flex: 0 0 88.66667%;
+        max-width: 88.66667%;
+    }
+    @media (min-width:955px) and (max-width: 990px) {
+        flex: 0 0 94.66667%;
+        max-width: 94.66667%;
     }
 }
 .software-rating{
@@ -490,5 +575,41 @@ a, button, submit{
     z-index: 100;
     @media (max-width: 991.98px) {
         display: block;
+    }
+}
+footer{
+    width: 100%;
+}
+.cp-gradient-border{
+    background: #46a9e6;
+    background: -moz-linear-gradient(left, #46a9e6 0%, #b4fcc9 100%);
+    background: -webkit-linear-gradient(left, #46a9e6 0%,#b4fcc9 100%);
+    background: linear-gradient(to right, #46a9e6 0%,#b4fcc9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46a9e6', endColorstr='#b4fcc9',GradientType=1 );
+    height: 5px;
+    width: 100%;
+}
+.p-2px{
+    padding: 2px;
+}
+.show-more{
+    font-size: 14px;
+    color: #303f9f;
+    font-weight: 500;    
+    text-align: center;
+}
+.cp-isv-offer-text{
+    font-size: 15px;
+    color: #4a4a4a;
+    font-weight: bold;
+    padding-left: 12px;
+}
+.cp-importent-text{
+    padding-top: 35px;
+    font-size: 13px;
+    color: #9b9b9b;
+    font-style: italic;
+    span{
+        font-weight: bold;
     }
 }

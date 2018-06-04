@@ -104,7 +104,7 @@
     }
 }
 
-#signupmodal{    
+#signupmodal,.signupclickmodal{    
     top: 70px;
     .modal-dialog{
         max-width: 400px;
@@ -182,5 +182,147 @@
             text-decoration: underline;
             color: #6a6767; 
         }
+    }
+    .cp-theme-a-btn{
+        padding: 0.55rem 2.2rem;
+        display: block;
+        width: 89%;
+        margin: auto;
+        max-width: 280px;
+    }
+    .cp-signin-terms-text{
+        font-size: 12px;
+        color: #bdbdbd;
+        a{
+            color: #bdbdbd;
+            text-decoration: underline;
+        }
+    }
+}
+.signupclickmodal{
+    .modal-header{
+        padding: 0px;
+        .close{
+            position: absolute;
+            right: 10px;
+            @media (max-width: 991.98px) {
+                top: 6px;
+            }
+            width: 39px;
+            height: 39px;
+            @include border-radius(50%);
+            background: #757575;
+            box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.5);
+            border: solid 1px #ffffff;
+            color: #fff;
+            opacity: 1;
+            z-index: 100;
+            span{
+                    font-weight: 300;
+                    font-size: 30px;
+                    position: relative;
+                    top: -15px;
+                    line-height: 30px;
+                    left: -4px;
+                }
+        }
+    }
+}
+.signin-form-layout{
+    .form-control{
+        padding: 0.41rem 0.75rem;
+        box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+        @include border-radius(3px);
+        font-size: 14px;
+    }
+    label{
+        margin-bottom: .2rem;
+        font-size: 14px;
+        color: #403e3e;
+    }
+}
+.sign-in-form{
+    .cp-theme-submit-btn{
+        padding: 0.4rem 2.8rem;
+        border: none;
+    }
+    a{
+        color: #6a6767;
+    }
+    .custom-checkbox .custom-control-label::before {
+        @include border-radius(1px);
+        background: #fff;
+        box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+    }
+    .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{
+        box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+        background-color: #fff;
+        @include border-radius(1px);
+    }
+    .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after{
+        background-image: url(../images/remember-tick-icon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 18px;
+        height: 18px;
+        zoom: 2;
+        top: -4px;
+        left: -3px;
+    }
+
+}
+
+.mobile-sliding-fixed-area{
+    position: fixed;
+    top:0;
+    // left: calc(100% + 254px);
+    left: 0px;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    @media (min-width: 992px) {
+        position: relative;
+        flex: 0 0 44.44447%;
+        max-width: 44.44447%;
+        height: auto;
+        overflow: visible;
+        left: auto;
+        top: auto;
+        z-index: 5;
+    }
+    // -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+    // -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+    // box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+    &:before {
+        box-shadow: -5px 0 5px -5px inset;
+        content: " ";
+        height: 100%;
+        left: -5px;
+        position: absolute;
+        top: 0;
+        width: 5px;
+    }
+    &:after {
+        box-shadow: 5px 0 5px -5px inset;
+        content: " ";
+        height: 100%;
+        position: absolute;
+        right: -5px;
+        width: 5px;
+        top:0px;
+    }
+    background: #fff;
+    .signupclickmodal .modal-dialog, .signupclickmodal .modal-dialog{
+        max-width: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        @include border-radius(0px);
+    }
+    #signupmodal .modal-body, .signupclickmodal .modal-body{
+        padding: 35px 15px;
     }
 }
