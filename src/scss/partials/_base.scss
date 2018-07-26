@@ -55,6 +55,9 @@ a, button, submit{
 .pb-80 {
     padding-bottom: 80px !important;
 }
+.pb-150 {
+    padding-bottom: 150px !important;
+}
 .cp-white-bg {
     background-color: $white-bg;
 }
@@ -497,6 +500,9 @@ a, button, submit{
 .gray-bg{
     background-color: #fafafa !important;
 }
+.dark-gray-bg{
+    background-color: #efeff4 !important;
+}
 .cp-letteravatar{
     width: 35px;
     height: 35px;
@@ -612,4 +618,7 @@ footer{
     span{
         font-weight: bold;
     }
+}
+.mh-45vh {
+    min-height: 45vh
 }

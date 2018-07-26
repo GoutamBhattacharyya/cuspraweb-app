@@ -494,3 +494,98 @@ a.ui-button:active,
     }    
   }
 }
+
+.cp-genaric-inner-container{
+  padding-left: 80px !important;
+  padding-right: 15px !important;
+  @media (max-width: 991.98px) {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  } 
+}
+.cp-genaric-heading{
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+  @media (max-width: 991.98px) {
+    font-size: 14px;
+  }
+}
+.cp-non-login-genaric-heading{
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+  @media (max-width: 991.98px) {
+    font-size: 14px;
+  }
+}
+.cp-genaric-instruction{
+  font-size: 14px;
+  color: #000000;
+  @media (max-width: 991.98px) {
+    font-size: 12px;
+  }
+}
+.cp-genaric-subheading{
+  font-size: 16px;
+  color: #212121;
+  @media (max-width: 991.98px) {
+    font-size: 14px;
+  }
+}
+.cp-non-login-genaric-subheading{
+  font-size: 20px;
+  color: #212121;
+  @media (max-width: 991.98px) {
+    font-size: 14px;
+  }
+}
+.cp-genaric-body-content{
+  .cp-genaric-subheading{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @media (max-width: 991.98px) {
+      padding-bottom: 0px;
+    }
+  }
+  p{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+    line-height: 22px;
+    padding-left: 20px;
+    @media (max-width: 991.98px) {
+      padding-left: 0px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+}
+.cp-inner-body-non-login{
+  margin-top: 100px;
+  @media (max-width: 767.98px) {
+    margin-top: 65px;
+  }
+}
+.cp-genaric-gradient-border{
+  background: #46a9e6;
+  background: -moz-linear-gradient(left, #46a9e6 0%, #b4fcc9 100%);
+  background: -webkit-linear-gradient(left, #46a9e6 0%, #b4fcc9 100%);
+  background: linear-gradient(to right, #46a9e6 0%, #b4fcc9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46a9e6', endColorstr='#b4fcc9',GradientType=1 );
+  height: 10px;
+  width: 100%;
+  @media (max-width: 991.98px) {
+    height: 5px;
+  }
+}
+.software-image-add{
+  border: 2px solid #fff;
+  box-shadow: 3px 4px 6px 0 rgba(0, 0, 0, 0.5);
+}
+.cp-non-login-body-content{
+  background: #fff;
+  p{
+    line-height: 25px;
+  }
+}

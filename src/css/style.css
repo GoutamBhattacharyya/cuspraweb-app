@@ -44,6 +44,9 @@ a, button, submit {
 .pb-80 {
   padding-bottom: 80px !important; }
 
+.pb-150 {
+  padding-bottom: 150px !important; }
+
 .cp-white-bg {
   background-color: #fff; }
 
@@ -492,6 +495,9 @@ a, button, submit {
 .gray-bg {
   background-color: #fafafa !important; }
 
+.dark-gray-bg {
+  background-color: #efeff4 !important; }
+
 .cp-letteravatar {
   width: 35px;
   height: 35px;
@@ -605,6 +611,9 @@ footer {
   font-style: italic; }
   .cp-importent-text span {
     font-weight: bold; }
+
+.mh-45vh {
+  min-height: 45vh; }
 
 .cp-tooltip {
   background: #4a4a4a;
@@ -1399,6 +1408,97 @@ a.ui-button:active,
       top: 60%;
       left: 52%;
       transform: translate(-50%, -50%); } }
+
+.cp-genaric-inner-container {
+  padding-left: 80px !important;
+  padding-right: 15px !important; }
+  @media (max-width: 991.98px) {
+    .cp-genaric-inner-container {
+      padding-right: 15px !important;
+      padding-left: 15px !important; } }
+
+.cp-genaric-heading {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold; }
+  @media (max-width: 991.98px) {
+    .cp-genaric-heading {
+      font-size: 14px; } }
+
+.cp-non-login-genaric-heading {
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold; }
+  @media (max-width: 991.98px) {
+    .cp-non-login-genaric-heading {
+      font-size: 14px; } }
+
+.cp-genaric-instruction {
+  font-size: 14px;
+  color: #000000; }
+  @media (max-width: 991.98px) {
+    .cp-genaric-instruction {
+      font-size: 12px; } }
+
+.cp-genaric-subheading {
+  font-size: 16px;
+  color: #212121; }
+  @media (max-width: 991.98px) {
+    .cp-genaric-subheading {
+      font-size: 14px; } }
+
+.cp-non-login-genaric-subheading {
+  font-size: 20px;
+  color: #212121; }
+  @media (max-width: 991.98px) {
+    .cp-non-login-genaric-subheading {
+      font-size: 14px; } }
+
+.cp-genaric-body-content .cp-genaric-subheading {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  @media (max-width: 991.98px) {
+    .cp-genaric-body-content .cp-genaric-subheading {
+      padding-bottom: 0px; } }
+
+.cp-genaric-body-content p {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+  line-height: 22px;
+  padding-left: 20px; }
+  @media (max-width: 991.98px) {
+    .cp-genaric-body-content p {
+      padding-left: 0px;
+      font-size: 13px;
+      line-height: 20px; } }
+
+.cp-inner-body-non-login {
+  margin-top: 100px; }
+  @media (max-width: 767.98px) {
+    .cp-inner-body-non-login {
+      margin-top: 65px; } }
+
+.cp-genaric-gradient-border {
+  background: #46a9e6;
+  background: -moz-linear-gradient(left, #46a9e6 0%, #b4fcc9 100%);
+  background: -webkit-linear-gradient(left, #46a9e6 0%, #b4fcc9 100%);
+  background: linear-gradient(to right, #46a9e6 0%, #b4fcc9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46a9e6', endColorstr='#b4fcc9',GradientType=1 );
+  height: 10px;
+  width: 100%; }
+  @media (max-width: 991.98px) {
+    .cp-genaric-gradient-border {
+      height: 5px; } }
+
+.software-image-add {
+  border: 2px solid #fff;
+  box-shadow: 3px 4px 6px 0 rgba(0, 0, 0, 0.5); }
+
+.cp-non-login-body-content {
+  background: #fff; }
+  .cp-non-login-body-content p {
+    line-height: 25px; }
 
 @media (max-width: 991px) {
   .innerbody .container {
@@ -2332,6 +2432,70 @@ a.ui-button:active,
     -moz-border-radius: 0px; }
   .mobile-sliding-fixed-area #signupmodal .modal-body, .mobile-sliding-fixed-area .signupclickmodal .modal-body {
     padding: 35px 15px; }
+
+.signup-verification-form .form-control {
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border: solid 1px #979797;
+  font-size: 14px;
+  color: #4a4a4a; }
+
+.signup-verification-form .custom-control-label {
+  font-size: 12px;
+  color: #212121; }
+
+.signup-verification-form .custom-control-label::before {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  background: #fff;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border: solid 1px #979797;
+  width: 20px;
+  height: 20px; }
+
+.signup-verification-form .custom-control-label::after {
+  top: -2px;
+  left: -6px;
+  width: 2rem;
+  height: 2rem; }
+
+.signup-verification-form .cp-theme-a-btn {
+  padding: 0.55rem 2.2rem;
+  display: block;
+  width: 145px;
+  border: none; }
+
+.cp-avater-placeholder {
+  background: #efeff4; }
+
+.signup-form .form-control {
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border: solid 1px #979797;
+  font-size: 14px;
+  color: #4a4a4a; }
+
+.signup-form .custom-control-label {
+  font-size: 12px;
+  color: #212121; }
+
+.signup-form .cp-theme-a-btn {
+  padding: 0.55rem 2.2rem;
+  display: block;
+  width: 145px;
+  border: none; }
+
+.signup-form a {
+  color: #6a6767;
+  text-decoration: underline;
+  font-size: 14px; }
+
+.signup-form select {
+  background-image: url(../images/select-arrow.jpg);
+  background-repeat: no-repeat;
+  background-position: 96.5% center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
 
 .cp-processes-listing .cp-process-row {
   border-bottom: solid 1px #d4d4d4; }
